@@ -11,8 +11,7 @@ const AdminJobsTable = () => {
     const [filterJobs, setFilterJobs] = useState(allAdminJobs);
     const navigate = useNavigate();
 
-    useEffect(()=>{ 
-        // Note: You can delete the console.log('called') below if you want to clean up your console!
+    useEffect(()=>{
         console.log('called');
         const filteredJobs = allAdminJobs.filter((job)=>{
             if(!searchJobByText){
